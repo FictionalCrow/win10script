@@ -36,7 +36,7 @@ $tweaks = @(
 	"InstallNotepadplusplus",
 	"InstallIrfanview",
 	"InstallVLC",
-	"InstallAdobe",
+	"InstallSumatra",
 	"InstallBrave",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
 	
@@ -254,8 +254,8 @@ Function InstallProgs {
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
 
-Function InstallAdobe {
-	Show-Choco-Menu -Title "Do you want to install Adobe Acrobat Reader?" -ChocoInstall "adobereader"
+Function InstallSumatra {
+	Show-Choco-Menu -Title "Do you want to install SumatraPDF?" -ChocoInstall "sumatrapdf"
 }
 
 Function InstallBrave {
@@ -299,6 +299,18 @@ Function InstallQbittorrent {
 
 Function InstallTelegram {
 	Show-Choco-Menu -Title "Do you want to install Telegram?" -ChocoInstall "telegram"
+}
+
+Function InstallFirefox {
+	Show-Choco-Menu -Title "Do you want to install Firefox?" -ChocoInstall "Firefox"
+}
+
+Function InstallChromium {
+	Show-Choco-Menu -Title "Do you want to install Chromium?" -ChocoInstall "ungoogled-chromium"
+}
+
+Function InstallIridium {
+	Show-Choco-Menu -Title "Do you want to install Iridium?" -ChocoInstall "iridium-browser"
 }
 ##########
 # Privacy Tweaks
