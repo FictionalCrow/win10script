@@ -45,6 +45,9 @@ $tweaks = @(
 	"Installopenssh",
 	"InstallQbittorrent",
 	"InstallTelegram",
+	"InstallFirefox",
+	"InstallChromium",
+	"InstallIridium",
 	
 
 	### Windows Apps
