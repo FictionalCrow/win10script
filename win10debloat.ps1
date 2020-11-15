@@ -3,6 +3,7 @@
 # Primary Author: Disassembler <disassembler@dasm.cz>
 # Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
+# Chris Titus : https://github.com/ChrisTitusTech/win10script
 #
 #    Note from author: Never run scripts without reading them & understanding what they do.
 #
@@ -38,6 +39,13 @@ $tweaks = @(
 	"InstallAdobe",
 	"InstallBrave",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
+	
+	###Crows Apps###
+	"InstallKeepass",
+	"Installopenssh",
+	"InstallQbittorrent",
+	"InstallTelegram",
+	
 
 	### Windows Apps
 	"DebloatAll",
@@ -66,8 +74,8 @@ $tweaks = @(
 	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
 	# "DisableAdminShares",           # "EnableAdminShares",
 	"DisableSMB1",                # "EnableSMB1",
-	# "DisableSMBServer",           # "EnableSMBServer",
-	# "DisableLLMNR",               # "EnableLLMNR",
+	"DisableSMBServer",           # "EnableSMBServer",
+	"DisableLLMNR",               # "EnableLLMNR",
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
 	"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
 	"DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
@@ -130,7 +138,7 @@ $tweaks = @(
 
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
-	"HideHiddenFiles",
+	#"HideHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	"HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
@@ -180,8 +188,8 @@ $tweaks = @(
 	# "EnableAudio",                # "DisableAudio",
 
 	### Unpinning ###
-	#"UnpinStartMenuTiles",
-	#"UnpinTaskbarIcons",
+	"UnpinStartMenuTiles",
+	"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
 )
@@ -293,6 +301,22 @@ Function ChangeDefaultApps {
 	dism /online /Import-DefaultAppAssociations:"%UserProfile%\Desktop\MyDefaultAppAssociations.xml"
 }
 
+#### Crows added apps ###
+Function InstallKeepass {
+	Show-Choco-Menu -Title "Do you want to install Keepass?" -ChocoInstall "keepass"
+}
+
+Function Installopenssh {
+	Show-Choco-Menu -Title "Do you want to install openssh?" -ChocoInstall "openssh"
+}
+
+Function InstallQbittorrent {
+	Show-Choco-Menu -Title "Do you want to install Qbittorrent?" -ChocoInstall "qbittorrent"
+}
+
+Function InstallTelegram {
+	Show-Choco-Menu -Title "Do you want to install Telegram?" -ChocoInstall "telegram"
+}
 ##########
 # Privacy Tweaks
 ##########
@@ -2627,15 +2651,15 @@ Function DebloatAll {
         "*Royal Revolt*"
         "*Sway*"
         "*Speed Test*"
-        "*Dolby*"
+        #"*Dolby*"
              
         #Optional: Typically not removed but you can if you need to for some reason
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
-        #"*Microsoft.BingWeather*"
-        #"*Microsoft.MSPaint*"
-        #"*Microsoft.MicrosoftStickyNotes*"
-        #"*Microsoft.Windows.Photos*"
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
+        "*Microsoft.BingWeather*"
+        "*Microsoft.MSPaint*"
+        "*Microsoft.MicrosoftStickyNotes*"
+        "*Microsoft.Windows.Photos*"
         #"*Microsoft.WindowsCalculator*"
         #"*Microsoft.WindowsStore*"
     )
