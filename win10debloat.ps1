@@ -74,8 +74,8 @@ $tweaks = @(
 
 	### Security Tweaks ###
 	"SetUACLow",                  # "SetUACHigh",
-	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
-	# "DisableAdminShares",           # "EnableAdminShares",
+	"DisableSharingMappedDrives",  # "EnableSharingMappedDrives",
+	"DisableAdminShares",           # "EnableAdminShares",
 	"DisableSMB1",                # "EnableSMB1",
 	"DisableSMBServer",           # "EnableSMBServer",
 	"DisableLLMNR",               # "EnableLLMNR",
@@ -89,7 +89,7 @@ $tweaks = @(
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	#"SetDEPOptOut",                 # "SetDEPOptIn",
 	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
-	#"DisableScriptHost",            # "EnableScriptHost",
+	"DisableScriptHost",            # "EnableScriptHost",
 	#"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
 	"DisableMeltdownCompatFlag", # "EnableMeltdownCompatFlag"    
 
@@ -111,7 +111,7 @@ $tweaks = @(
 	"DisableHibernation",		# "EnableHibernation",          # 
 	"EnableSleepButton",		# "DisableSleepButton",         
 	"DisableSleepTimeout",        # "EnableSleepTimeout",
-	# "DisableFastStartup",         # "EnableFastStartup",
+	"DisableFastStartup",         # "EnableFastStartup",
 
 	### UI Tweaks ###
 	"DisableActionCenter",          # "EnableActionCenter",
