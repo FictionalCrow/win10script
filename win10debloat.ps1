@@ -88,7 +88,7 @@ $tweaks = @(
 	"EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	#"SetDEPOptOut",                 # "SetDEPOptIn",
-	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
+	"EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
 	"DisableScriptHost",            # "EnableScriptHost",
 	#"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
 	"DisableMeltdownCompatFlag", # "EnableMeltdownCompatFlag"    
@@ -314,6 +314,26 @@ Function InstallChromium {
 
 Function InstallIridium {
 	Show-Choco-Menu -Title "Do you want to install Iridium?" -ChocoInstall "iridium-browser"
+}
+
+Function InstallSteam {
+	Show-Choco-Menu -Title "Do you want to install Steam?" -ChocoInstall "steam"
+}
+
+Function InstallEpicGamesLauncher{
+	Show-Choco-Menu -Title "Do you want to install epicgameslauncher?" -ChocoInstall "epicgameslauncher"
+}
+
+Function InstallGoG {
+	Show-Choco-Menu -Title "Do you want to install GoG?" -ChocoInstall "goggalaxy"
+}
+
+Function InstallIridium {
+	Show-Choco-Menu -Title "Do you want to install Iridium?" -ChocoInstall "iridium-browser"
+}
+
+Function InstallJava8 {
+	Show-Choco-Menu -Title "Do you want to install Java8?" -ChocoInstall "jre8"
 }
 ##########
 # Privacy Tweaks
