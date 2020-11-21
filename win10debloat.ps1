@@ -50,7 +50,7 @@ $tweaks = @(
 	"InstallIridium",
 	"InstallSteam",
 	"InstallEpicGamesLauncher",
-	"InstallGoG',
+	"InstallGoG",
 	"InstallJava",
 	"InstallTeamViewer",
 	"InstallOBSstudio",
