@@ -51,7 +51,7 @@ $tweaks = @(
 	"InstallSteam",
 	"InstallEpicGamesLauncher",
 	"InstallGoG',
-	"InstallJava8",
+	"InstallJava",
 	"InstallTeamViewer",
 	"InstallOBSstudio",
 	
@@ -336,8 +336,8 @@ Function InstallGoG {
 	Show-Choco-Menu -Title "Do you want to install GoG?" -ChocoInstall "goggalaxy"
 }
 
-Function InstallJava8 {
-	Show-Choco-Menu -Title "Do you want to install Java8?" -ChocoInstall "jre8"
+Function InstallJava {
+	Show-Choco-Menu -Title "Do you want to install Java?" -ChocoInstall "jre8"
 }
 
 Function InstallTeamviewer {
