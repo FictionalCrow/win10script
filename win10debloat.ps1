@@ -173,6 +173,7 @@ $tweaks = @(
 
 	### Application Tweaks ###
     	"DisableOneDrive",		# "EnableOneDrive",
+	"UninstallOneDrive",		#
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
@@ -188,7 +189,7 @@ $tweaks = @(
 	"InstallPDFPrinter"		# "UninstallPDFPrinter",
 	 "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	 "RemoveFaxPrinter",             # "AddFaxPrinter",
-	 "UninstallOneDrive", 
+
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
