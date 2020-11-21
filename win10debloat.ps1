@@ -187,7 +187,7 @@ $tweaks = @(
 	"UnsetPhotoViewerAssociation",	#"SetPhotoViewerAssociation",
 	"RemovePhotoViewerOpenWith",	#"AddPhotoViewerOpenWith",
 	"InstallPDFPrinter"		# "UninstallPDFPrinter",
-	 "UninstallXPSPrinter",          # "InstallXPSPrinter",
+	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	# "RemoveFaxPrinter",             # "AddFaxPrinter",
 
 
