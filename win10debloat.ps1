@@ -48,6 +48,14 @@ $tweaks = @(
 	"InstallFirefox",
 	"InstallChromium",
 	"InstallIridium",
+	"InstallSteam",
+	"InstallEpicGamesLauncher",
+	"InstallGoG',
+	"InstallJava8",
+	"InstallTeamViewer",
+	"InstallOBSstudio",
+	
+	
 	
 
 	### Windows Apps
@@ -328,12 +336,16 @@ Function InstallGoG {
 	Show-Choco-Menu -Title "Do you want to install GoG?" -ChocoInstall "goggalaxy"
 }
 
-Function InstallIridium {
-	Show-Choco-Menu -Title "Do you want to install Iridium?" -ChocoInstall "iridium-browser"
-}
-
 Function InstallJava8 {
 	Show-Choco-Menu -Title "Do you want to install Java8?" -ChocoInstall "jre8"
+}
+
+Function InstallTeamviewer {
+	Show-Choco-Menu -Title "Do you want to install TeamViewer?" -ChocoInstall "teamviewer9"
+}
+
+Function InstallOBSstudio {
+	Show-Choco-Menu -Title "Do you want to install OBSstudio?" -ChocoInstall "obs-studio"
 }
 ##########
 # Privacy Tweaks
