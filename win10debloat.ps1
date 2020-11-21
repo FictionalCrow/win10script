@@ -200,7 +200,7 @@ $tweaks = @(
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
-	"UnpinTaskbarIcons",
+	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
 )
