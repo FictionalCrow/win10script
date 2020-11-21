@@ -51,7 +51,6 @@ $tweaks = @(
 	"InstallSteam",
 	"InstallEpicGamesLauncher",
 	"InstallGoG",
-	"InstallJava",
 	"InstallTeamViewer",
 	"InstallOBSstudio",
 	
